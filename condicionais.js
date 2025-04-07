@@ -112,28 +112,45 @@ function exercicio04(){
     
     function intermediario01() {
         debugger;
-        let numero1 = prompt("Digite o primeiro número:");
+        let numero1 = Number(prompt("Digite o primeiro número:"));
         let operacao = prompt("Digite a operação (+, -, *, /):");
-        let numero2 = prompt("Digite o segundo número:");
+        let numero2 = Number(prompt("Digite o segundo número:"));
         let resultado;
-    
-        if (operacao === "+") {
-            resultado = numero1 + numero2;
-        } else if (operacao === "-") {
-            resultado = numero1 - numero2;
-        } else if (operacao === "*") {
-            resultado = numero1 * numero2;
-        } else if (operacao === "/") {
-            if (numero2 !== 0) {
-                resultado = numero1 / numero2;
-
-            }
+        
+        if (isNaN(numero1) || isNaN(numero2)) {
+            alert("Por favor, digite números válidos.");
         } else {
-            alert("Operação inválida. Use +, -, * ou /.");
+            if (operacao === "+") {
+                resultado = numero1 + numero2;
+            } else if (operacao === "-") {
+                resultado = numero1 - numero2;
+            } else if (operacao === "*") {2
+                resultado = numero1 * numero2;
+            } else if (operacao === "/") {
+                if (numero2 !== 0) {
+                    resultado = numero1 / numero2;
+                } else {
+                    alert("Divisão por zero não é permitida.");
+                }
+            } else {
+                alert("Operação inválida. Use +, -, * ou /.");
+            }
         }
-    
-        alert("O resultado é: " + resultado);
+        
+        if (resultado !== undefined) {
+            alert("O resultado é: " + resultado);
+        }
+        
     }
     
-    intermediario01();
-    
+function exerc08(){
+
+    let valor= prompt ("Digite o valor da compra")       
+    if(valor >=100 ){
+        valor = valor * 0,10;
+        alert("desconto alicado")
+    } else{
+        alert("desconto nao aplicado")
+    }
+}
+ exerc08()
