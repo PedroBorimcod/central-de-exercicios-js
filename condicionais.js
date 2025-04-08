@@ -150,7 +150,7 @@ function exerc08(){
         valor = valor * 0,10;
         alert("desconto alicado")
     } else{
-        alert("desconto nao aplicado")
+        alert("desconto nao aplicado    ")
     }
 }
  exerc08()
