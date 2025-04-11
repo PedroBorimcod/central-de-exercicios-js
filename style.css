@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.teste01{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+font-family: Special Gothic Expanded One;
+background-color: aquamarine;
+
+}
+.btn{
+   border-radius: 40px;
+   width: 50vh;
+   height: 5vw;
+   background-color: grey;
+   box-shadow: 10px 10px 50px;
+   border: none;
+   font-family: Quicksand;
+   font-family: 40px;
+   cursor: pointer;
+
+
+
+}
+h2{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 150px;
+}
+.teste02{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+font-family: Special Gothic Expanded One;
+
+
+}
+

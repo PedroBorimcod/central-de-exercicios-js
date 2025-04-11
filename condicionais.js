@@ -4,26 +4,27 @@ function exercicio02 () {
 
 if (numero > 0) {
 
-    console.log("Positivo");
+    alert("Positivo");
 
 } 
 else {
     if (numero <0)  {
 
-        console.log ("Negativo");
+        alert ("Negativo");
     
     }
 else {
 
-        console.log("É zero.")
+        alert("É zero.")
 
     }   
 
 
 
 }
-
+gerarLog ("Exercico de condicionais 01 executado." + new Date().toLocaleDateString()); 
 }
+
 
 
 function exercicio01 () {
@@ -32,16 +33,16 @@ function exercicio01 () {
 
 if (numero >= 18) {
 
-    console.log("É maior de idade")
+    alert("É maior de idade")
 
 }
 else{
 
     if(numero <= 18){
-        console.log("É menor de idade")
+        alert("É menor de idade")
     }else{
 
-        console.log("É maior de idade")
+        alert("É maior de idade")
 
     }
 
@@ -57,10 +58,10 @@ function exercicio06 () {
     let numero= prompt("Divida o numero")
 
 if(numero % 2 === 0){
-    console.log(`O numero ${numero} é divisiel`)
+    alert(`O numero ${numero} é divisiel`)
 }
 else{
-    console.log(`O numero ${numero} nao e divisivel`)
+    alert(`O numero ${numero} nao e divisivel`)
 }
 
 
@@ -99,7 +100,7 @@ function exercicio05 () {
     }
     }
 
-function exercicio04(){
+function exercicio04cond(){
      let numero=prompt ("Seu numero é positivo ou negativo")
          if (numero < 0){
             alert("É negativo")
@@ -153,4 +154,18 @@ function exerc08(){
         alert("desconto nao aplicado    ")
     }
 }
- exerc08()
+
+
+function gerarLog(textoDoLog){
+    let logscontainer = document.querySelector(".log-container");
+
+
+    let paragraph = document.createElement("p");
+
+    paragraph.innerHTML = textoDoLog;
+
+    logscontainer.appendChild(paragraph);
+
+
+
+}
